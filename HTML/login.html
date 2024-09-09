@@ -1,13 +1,19 @@
 <html>
-<head><title>Login page </title></head>
+<head><title>Login page</title></head>
 <body>
-    <form>
+    <form onsubmit="redirectToImage(); return false;">
         <label for="username"><span style="color: red">*</span> Username:</label>
         <input type="text" id="username" name="username" placeholder="Enter username"> <br><br>
-        <label for="password"><span style="color: red" >*</span> Password:</label>
-        <input type="password" id="password" name="password"placeholder="Enter password"><br><br>
-        <a href="https://steemitimages.com/p/ATHztLkMgsJWLbMyq3qLvwcLAZhtXYbss8henvCA16zQW1tDYDb43LvCoiuQFJSpqbA5JXdAnL5pG8qAvh8YjNCkA4uw1VjeuKwdecHSCpDAqQZh3P2Lmzyr5fv6A2dv9wCm9vyewcdzrwqnmze2zGN7YzVGP6M3eMrAgNVeyfd7tLX4AL6fdVRgF2MuUUFgCRU9SfgCHPTL8HotSdcZaJx6?format=match&mode=fit&width=640">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="password"><span style="color: red">*</span> Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <a href="#">Forgot Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="submit" value="Login">
     </form>
+
+    <script>
+        function redirectToImage() {
+            window.location.href = "https://static.vecteezy.com/system/resources/previews/017/639/144/non_2x/account-has-been-registered-login-success-concept-illustration-flat-design-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-vector.jpg";
+        }
+    </script>
 </body>
 </html>
