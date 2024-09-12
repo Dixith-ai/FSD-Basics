@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body style="text-align: center; font-family: Arial, sans-serif; background-color: #ececec; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px; max-width: 400px; width: 100%;">
+        <h1 style="color: #333;">Rock Paper Scissors</h1>
+        <div>
+            <button onclick="play('rock')" style="background-color: #4CAF50; color: white; border: none; border-radius: 5px; padding: 10px 20px; margin: 5px; cursor: pointer; font-size: 16px;">Rock</button>
+            <button onclick="play('paper')" style="background-color: #2196F3; color: white; border: none; border-radius: 5px; padding: 10px 20px; margin: 5px; cursor: pointer; font-size: 16px;">Paper</button>
+            <button onclick="play('scissors')" style="background-color: #f44336; color: white; border: none; border-radius: 5px; padding: 10px 20px; margin: 5px; cursor: pointer; font-size: 16px;">Scissors</button>
+        </div>
+        <div id="result" style="margin-top: 20px; font-size: 18px; color: #333;"></div>
+    </div>
+
+    <script>
+        function play(userChoice) {
+            const choices = ['rock', 'paper', 'scissors'];
+            const computerChoice = choices[Math.floor(Math.random() * 3)];
+            let result;
+
+            if (userChoice === computerChoice) {
+                result = `It's a tie! Both chose ${userChoice}.`;
+            } else if (
+                (userChoice === 'rock' && computerChoice === 'scissors') ||
+                (userChoice === 'paper' && computerChoice === 'rock') ||
+                (userChoice === 'scissors' && computerChoice === 'paper')
+            ) {
+                result = `You win! ${userChoice.charAt(0).toUpperCase() + userChoice.slice(1)} beats ${computerChoice}.`;
+            } else {
+                result = `You lose! ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)} beats ${userChoice}.`;
+            }
+
+            document.getElementById('result').innerText = `Computer chose ${computerChoice}. ${result}`;
+        }
+    </script>
+</body>
+</html>

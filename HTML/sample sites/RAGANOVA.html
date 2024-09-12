@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAGANOVA</title>
+</head>
+<body style="background: linear-gradient(to bottom, #9afff3, #fad0c4); margin: 0; padding: 0; font-family: Arial, sans-serif;">
+    <!-- Main Container -->
+    <div style="width: 90%; max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 20px;">
+        <!-- Header Section -->
+        <header style="text-align: center; padding: 10px 0;">
+            <h1 style="font-size: 28px; margin: 0; color: #333;">RAGANOVA</h1>
+            <p style="font-size: 16px; color: #666;">Listen to your favorite tracks</p>
+        </header>
+
+        <!-- Now Playing Section -->
+        <section style="background-color: #f8f8f8; padding: 20px; margin: 20px 0; border-radius: 10px;">
+            <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">Now Playing</h2>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <!-- Album Cover -->
+                <img src=assets\images\musicplayer\tarentella.png alt="Album Cover" style="width: 80%; max-width: 300px; height: auto; border-radius: 10px; margin-bottom: 15px; border: 2px solid #ddd;">
+                <!-- Player Controls -->
+                <div style="width: 100%;">
+                    <h3 style="margin: 0 0 10px; text-align: center; color: #333;">Tarantella - Gabry Ponte & KEL</h3>
+                    <audio controls style="width: 100%; max-width: 300px;">
+                        <source src="\assets\audio\Tarantella.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- Playlist Section -->
+        <section>
+            <h2 style="font-size: 20px; margin-bottom: 10px; color: #333;">Playlist</h2>
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="text-align: center;">
+                    <img src="assets\images\musicplayer\Espresso.png" alt="Song 1" style="width: 80%; max-width: 200px; height: auto; border-radius: 10px; border: 2px solid #ddd;">
+                    <p style="margin: 10px 0; color: #333;">Espresso - Sabrina Carpenter</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="\assets\images\musicplayer\i_wanna_be_yours.png" alt="Song 2" style="width: 80%; max-width: 200px; height: auto; border-radius: 10px; border: 2px solid #ddd;">
+                    <p style="margin: 10px 0; color: #333;">I wanna be yours - Arctic monkeys</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="\assets\images\musicplayer\Devil_is_a_lie.png" alt="Song 3" style="width: 80%; max-width: 200px; height: auto; border-radius: 10px; border: 2px solid #ddd;">
+                    <p style="margin: 10px 0; color: #333;">Devil is a Lie - Tommy richman</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 10px 0; margin-top: 20px; background-color: #333; color: white; border-radius: 0 0 10px 10px;">
+            <p>&copy; 2024 RAGANOVA. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
