@@ -1,0 +1,11 @@
+h1 {
+    font-family: "Lucida Handwriting";
+    font-size: 50pt;
+    color: aqua;
+    text-align: center;
+  }
+  
+  p {
+    color: rgb(130, 222, 64);
+    font-size: 25pt;
+  }
