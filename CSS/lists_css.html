@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordered Lists Example</title>
+    <style type="text/css">
+        h1 {
+            color: red;
+            font-size: 40pt;
+        }
+        ol {
+            font-size: 30pt;
+            font-family: 'Times New Roman';
+            list-style-type: upper-roman;
+            color: blue;
+        }
+        ol ol {
+            font-size: 30pt;
+            font-family: 'Times New Roman', serif;
+            list-style-type: upper-alpha;
+            margin-left: 40px;
+            color: purple;
+        }
+        ol ol ol {
+            font-size: 20pt;
+            font-family: 'Times New Roman', serif;
+            list-style-type: lower-roman;
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>MOVIES</h1>
+    <ol class="upper-roman">
+        <li class="upper-roman">KANNADA
+            <ol>
+                <li class="alpha">KGF
+                    <ol>
+                        <li class="lower-roman">chapter-1</li>
+                        <li class="lower-roman">chapter-2</li>
+                    </ol>
+                </li>
+                <li class="alpha">SSE
+                    <ol>
+                        <li class="lower-roman">side-A</li>
+                        <li class="lower-roman">side-B</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>
