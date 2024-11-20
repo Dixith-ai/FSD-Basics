@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>JavaScript Math Functions</title>
+</head>
+<body>
+    <h2>JavaScript Math Functions</h2>
+
+    <p>Math.round(4.4): <span id="round"></span></p>
+    <p>Math.ceil(4.4): <span id="ceil"></span></p>
+    <p>Math.floor(4.4): <span id="floor"></span></p>
+    <p>Math.abs(-4.4): <span id="abs"></span></p>
+    <p>Math.max(1, 2, 3): <span id="max"></span></p>
+    <p>Math.min(1, 2, 3): <span id="min"></span></p>
+    <p>Math.random(): <span id="random"></span></p>
+    <p>Math.sqrt(16): <span id="sqrt"></span></p>
+    <p>Math.pow(2, 3): <span id="pow"></span></p>
+    <p>Math.sin(90° in radians): <span id="sin"></span></p>
+    <p>Math.cos(0° in radians): <span id="cos"></span></p>
+
+    <script>
+        document.getElementById("round").innerHTML = Math.round(4.4);
+        document.getElementById("ceil").innerHTML = Math.ceil(4.4);
+        document.getElementById("floor").innerHTML = Math.floor(4.4);
+        document.getElementById("abs").innerHTML = Math.abs(-4.4);
+        document.getElementById("max").innerHTML = Math.max(1, 2, 3);
+        document.getElementById("min").innerHTML = Math.min(1, 2, 3);
+        document.getElementById("random").innerHTML = Math.random().toFixed(4); // Limit to 4 decimal places
+        document.getElementById("sqrt").innerHTML = Math.sqrt(16);
+        document.getElementById("pow").innerHTML = Math.pow(2, 3);
+        document.getElementById("sin").innerHTML = Math.sin(Math.PI / 2); // Sine of 90 degrees
+        document.getElementById("cos").innerHTML = Math.cos(0); // Cosine of 0 degrees
+    </script>
+</body>
+</html>
